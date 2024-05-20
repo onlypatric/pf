@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <title>Patric Pintescul</title>
+    <style>
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+    
+        to {
+          opacity: 0;
+        }
+      }
+    
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+    
+        to {
+          opacity: 1;
+        }
+      }
+    
+      .fade-out {
+        animation: fadeOut .5s forwards;
+      }
+    
+      .fade-in {
+        animation: fadeIn .5s forwards;
+      }
+    </style>
+</head>
+
+<body class="p-0">
+  <!-- #region NAV BAR -->
+  <header class="text-gray-600 body-font md:absolute lg:absolute w-full">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a class="mr-5 hover:text-gray-900" href="https://github.com/onlypatric">GitHub</a>
+        <a class="hover:text-gray-900" href="https://www.instagram.com/only.patric">Instagram</a>
+      </nav>
+      <a
+        class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-600 fill-zinc-100 hover:bg-green-500 duration-300 hover:shadow rounded-full"
+          viewBox="0 -930 960 960">
+          <path
+            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+        </svg>
+        <span class="ml-3 text-xl">Patric Pintescul</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <button
+          class="inline-flex items-center bg-emerald-200 border-0 py-1 px-3 focus:outline-none hover:bg-emerald-300 duration-100 hover:shadow-md rounded text-base mt-4 md:mt-0">Connect with me
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- #endregion -->
+  <!-- #region HOME -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hi! I'm <span class="text-teal-900 font-semibold duration-500"><span id="changing-text-h1-name">Patric Pintescul</span></span>
+          <br class="hidden lg:inline-block">and I do <span id="changing-text"></span>
+        </h1>
+        <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+        <div class="flex justify-center items-center">
+          <button class="inline-flex text-white h-[100%] bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" id="changing-bg-button1">Email me</button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <dotlottie-player src="https://lottie.host/5f0c6243-b242-447c-9e75-641dab13ec51/4lJMSkQj93.json"
+          background="transparent" speed="1" nocontrols loop autoplay></dotlottie-player>
+      </div>
+    </div>
+  </section>
+  <div class="m-auto w-full text-gray-700">
+    <h5 class="text-gray-900 m-auto w-max">Navigate to</h5>
+    <div class="flex justify-center items-center">
+      <a class="mr-5 hover:text-gray-900" href="#">About</a>
+      <a class="mr-5 hover:text-gray-900" href="#">Experience</a>
+      <a class="mr-5 hover:text-gray-900" href="#">Certifications</a>
+      <a class="mr-5 hover:text-gray-900" href="#">Services & Products</a>
+      <a class="hover:text-gray-900" href="#">Testimonials</a>
+    </div>
+  </div>
+  <!-- #endregion -->
+  <!-- #region BLOG -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="sm:text-5xl text-3xl mb-4 font-medium">
+        Here's what i do best
+      </h1>
+      <div class="flex flex-wrap -m-4">
+        
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">SOFTWARE</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Web developement</h1>
+            <p class="leading-relaxed mb-3">Thanks to <span class="font-semibold">four years of experience </span>working in the field with multiple businesses I've been able to master my web developement skills, creating some amazing websites, and <span class="font-semibold">I'm ready to build an even better website for you!</span></p>
+          </div>
+        </div>
+        
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">WRITING</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Sales, SEO, website Copywriting</h1>
+            <p class="leading-relaxed mb-3">With web developement also came an interest for writing text, coming up with ideas to keep customers interested and make them buy any products <span class="font-semibold">I've been offering copywriting services for more than three years.</span></p>
+          </div>
+        </div>
+        
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">UI/UX</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Web design</h1>
+            <p class="leading-relaxed mb-3">Creating websites all by myself got me also into UI/UX, which helped me a lot building simple, yet complete websites such as this one, I can design custom websites for you or use a predefined set of components made and perfected by me over the course of two years.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <!-- #endregion -->
+  <!-- #region ABOUT-->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+      <div class="lg:w-4/6 mx-auto">
+        <div class="flex flex-col sm:flex-row mt-10">
+          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+            <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex flex-col items-center text-center justify-center">
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Who am I?</h2>
+              <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+              <p class="text-base">I'm Patric, a freelancer working from Italy that started its journey right before covid struck my country in 2019, staying home allowed me to learn about the online world.</p>
+            </div>
+          </div>
+          <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left grid place-items-center">
+            <p class="leading-relaxed text-lg mb-4">I got into software development when I found out a notes app that I used at the time was shutting down, it was a very essential application that I just couldn't live with, after a couple of months of work I did it, needless to say I stopped using it after two weeks, but the curiosity never gave up on me and instead has brought me to approach the whole IT field, learning to create desktop and mobile apps, 3D games, web apps and sites, AI training and coding and much more, with my coding journey also came the need to learn copywriting and some online selling strategies to make some money off of it, reason being I currently offer also copywriting and social media marketing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #endregion -->
+  <!-- #region EXPERIENCE -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">My experience</h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Here's a quick overview of what I got the chance to learn and work on.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SOFTWARE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Python</h2>
+            <p class="leading-relaxed text-base">A coding language that got me since the beginning, I have 5 years of actual experience with it.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SOFTWARE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Java</h2>
+            <p class="leading-relaxed text-base">I tried java just to get into Android development, I have around 4 and a half years of experience on it.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SOFTWARE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">C&C++</h2>
+            <p class="leading-relaxed text-base">C was always a curiosity for me, with the process of learning it I also studied C++ and Unreal Engine</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SOFTWARE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">C#</h2>
+            <p class="leading-relaxed text-base">A must for every unity 3D game programmer, I have around 4 years of experience with it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SOFTWARE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">SwiftUI</h2>
+            <p class="leading-relaxed text-base">The must when building iOS and iPadOS apps, I learned it ever since i got my Mac, around a year.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SOFTWARE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Pascal</h2>
+            <p class="leading-relaxed text-base">I learned it just because I got into SCL, I don't really work with it but if needed I know how to use it.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Software</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">HTML&CSS&JS</h2>
+            <p class="leading-relaxed text-base">The basics of every web developer, I hold 4 and a half years of experience with these languages</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SOFTWARE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Typescript & ReactJS & NextJS</h2>
+            <p class="leading-relaxed text-base">With my journey typescript and two js frameworks came with it, I have 3 years of experience with them.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/2 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">WRITING</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Copywriting</h2>
+            <p class="leading-relaxed text-base">Interacting with businesses on my journey I had the occasion to discuss with marketing teams, learning directly from real world experience.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/2 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">DESIGN</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">UI/UX Design</h2>
+            <p class="leading-relaxed text-base">You wouldn't really be able to build websites without starting from an idea, thats why I've learned UI/UX design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #endregion -->
+  <!-- #region CERTIFICATIONS -->
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="sm:text-5xl text-3xl mb-4 font-medium">
+        Here's some courses that I've taken
+      </h1>
+      <div class="-my-8 divide-y-2 divide-gray-100">
+        <div class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700">SOFTWARE</span>
+            <span class="mt-1 text-gray-500 text-sm">May 19 2023</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">AI Advanced & Introduction to ML Engineering by Google</h2>
+            <p class="leading-relaxed">Learning AI through Google's own course allowed me to develop further into this new thrilling technology, making me build AI models and integrating them into almost all of my apps</p>
+          </div>
+        </div>
+        <div class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700">SOFTWARE</span>
+            <span class="mt-1 text-gray-500 text-sm">Dec 8 2022</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">ReactJS Basics & Advanced by Meta</h2>
+            <p class="leading-relaxed">I got this certification thinking it would be the only way to actually master React, needless to say I did not and I may never master it, it's just too big of a framework.</p>
+          </div>
+        </div>
+        <div class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700">SOFTWARE</span>
+            <span class="text-sm text-gray-500">28 Feb 2024</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Google Ads expertise by Google</h2>
+            <p class="leading-relaxed">My curiosity brought me to learn Google Ads, both on YouTube and on the search engine, never really used my expertise but I'd love to, mixing my copywriting skills with actual real world scenarios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #endregion -->
+  <!-- #region SERVICES -->
+   
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">WHAT YOU MAY NEED</h2>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">My services</h1>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Website development</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">I can easily build you a website or collaborate with your team to upgrade the existing site, starting from prices as low as 30$.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Website copy</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">If your website is already complete yet you don't see customers staying it might be because of its content, and I'm here to fix it for as low as 40$.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Website design</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">A beautifully tailored website for you, this service usually comes with website development with a slight increase in investment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Code review and debug</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">You are learning to code and the process of building apps is difficult? I may be helpful if thats your case, I casually offer some codecamps where I showcase the principles of programming that I've learned and mastered in the past, with occasional emails from me if you get in contact with me asking for it.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Instagram management</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Your business is growing too much because you got a perfect website from me and now you can't manage your Instagram marketing accounts? let my newest software manage everything, it can send thousands of messages to your customer, interact with their recent posts with the click of a button, I sell lifetime licenses aswell as subscription ones if you don't want to invest too much in the beginning.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Ads copywriting</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Why worry about having to make tons of research, follow hundreds of competitors to see their strategies and lose your mind while coming up with a solution? Hire me, I might not have the best interest in your specific field but I have the cold mind to just work and produce the best result possible in the shortest amount of time allowing you to just scale your business and profits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <!-- #endregion -->
+  <!-- #region PRODUCTS -->
+
+  <div class="mx-auto flex-col items-center justify-center w-[100vw]">
+  <section class="text-gray-600 body-font overflow-hidden mx-auto">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap mx-auto">
+        <div class="lg:w-1/3 w-full lg:h-auto h-64 object-cover object-center rounded mx-0">
+          <dotlottie-player src="https://lottie.host/8d0119ca-30d6-46a0-9cee-bd3a4c83ce94/XGLR8zNQag.json"
+            background="transparent" speed="1" nocontrols loop autoplay></dotlottie-player>
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Instagram account automator</h1>
+          <p class="leading-relaxed">The best software to manage your Instagram accounts, 3 years of development for the simpliest and most useful app you'll ever use for Instagram, send up to 150k messages daily, up to 100k comments daily, like up to 250k posts, watch up to a million stories, all with multiple accounts.</p>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100">
+          </div>
+          <div class="flex">
+            <span class="title-font font-medium text-2xl text-gray-900">from 15$</span>
+            <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Get a free trial</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <section class="text-gray-600 body-font overflow-hidden mx-auto">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap mx-auto">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1 text-right">Copywriting</h1>
+          <p class="leading-relaxed text-right">With the use of my knowledge and in the future a fully fledged team i am able to provide sales text that actually attracts people, ranging from all ages, almost all niches too.</p>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+          </div>
+          <div class="flex">
+            <span class="title-font font-medium text-2xl text-gray-900">from 40$</span>
+            <button
+              class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Have a quote</button>
+          </div>
+        </div>
+        <div class="lg:w-1/3 w-full lg:h-auto h-64 object-cover object-center rounded grid place-items-center mx-10">
+          <dotlottie-player src="https://lottie.host/8d0119ca-30d6-46a0-9cee-bd3a4c83ce94/XGLR8zNQag.json"
+            background="transparent" speed="1" nocontrols loop autoplay></dotlottie-player>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <!-- #endregion -->
+  <!-- #region CONTACT -->
+   
+  <div class="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-gray-100 text-gray-900 rounded-lg">
+      <div class="flex flex-col justify-center">
+          <div>
+              <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+                  Lets talk about everything!
+              </h2>
+              <div class="text-gray-700 mt-8">
+                  Hate forms? Send me an <a class="underline" href="mailto:patric.pnt@icloud.com">email</a> instead.
+              </div>
+          </div>
+          <div class="mt-12 text-center">
+              <dotlottie-player src="https://lottie.host/d36e5888-0c1e-492e-8d42-dc5f5d1c3036/YyM7CY6XvQ.json"
+                background="transparent" speed="1" nocontrols loop autoplay></dotlottie-player>
+          </div>
+      </div>
+      <form action="https://formspree.io/f/xvonedbd" method="POST"> 
+          <div>
+              <span class="uppercase text-sm text-gray-600 font-bold">
+                  Your full name goes here
+              </span>
+              <input
+                  class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                  type="text"
+                  name="fullName"
+                  placeholder="Enter your Name"
+                  required
+              />
+          </div>
+          <div class="mt-8">
+              <span class="uppercase text-sm text-gray-600 font-bold">
+                  Your email goes here
+              </span>
+              <input
+                  class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+              />
+          </div>
+          <div class="mt-8">
+              <span class="uppercase text-sm text-gray-600 font-bold">
+                  your Phone Number goes here
+              </span>
+              <input
+                  class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                  type="phone"
+                  name="phone"
+                  placeholder="(optional) Enter your Phone Number including country code"
+              />
+          </div>
+          <div class="mt-8">
+              <span class="uppercase text-sm text-gray-600 font-bold">
+                  Here goes the message you want to send
+              </span>
+              <textarea
+                  class="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                  placeholder="Enter your Message"
+                  name="message"
+                  required
+              ></textarea>
+          </div>
+          <div class="mt-8">
+              <button
+                  class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-indigo-700"
+                  type="submit"
+              >
+                  Send it
+              </button>
+          </div>
+      </form>
+  </div>
+   
+  <!-- #endregion -->
+  <!-- #region FOOTER -->
+   
+   
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2"
+          class="w-10 h-10 text-white p-2 bg-green-600 fill-zinc-100 hover:bg-green-500 duration-300 hover:shadow rounded-full"
+          viewBox="0 -930 960 960">
+          <path
+            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+        </svg>
+        <span class="ml-3 text-xl">Patric Pintescul</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Patric Pintescul —
+        <a href="https://www.github.com/onlypatric" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@onlypatric</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+   
+  <!-- #endregion -->
+  <!-- #region CHANGING COLOR HOME SECTION-->
+  <script>
+      const messages = ["<span class=\"text-yellow-800\">web design.</span>",
+                        "<span class=\"text-teal-800\">full-stack apps.</span>",
+                        "<span class=\"text-indigo-800\">3D modelling.</span>",
+                        "<span class=\"text-rose-800\">copywriting.</span>",
+                        "<span class=\"text-amber-800\">social media marketing.</span>"];
+        const colors = ["text-yellow-800", "text-teal-800","text-indigo-800","text-rose-800","text-amber-800"]
+        const bgcolors = ["bg-yellow-800", "bg-teal-800", "bg-indigo-800", "bg-rose-800", "bg-amber-800"]
+        let currentIndex = 0;
+        const textElement = document.getElementById('changing-text');
+        const headerElement = document.getElementById("changing-text-h1-name")
+          const button1Element = document.getElementById("changing-bg-button1")
+        var oldtext = colors[currentIndex];
+          var oldbg = bgcolors[currentIndex];
+        
+      function changeText() {
+        // Apply fade-out animation
+        textElement.classList.remove('fade-in');
+        textElement.classList.add('fade-out');
+
+        // Wait for the fade-out animation to complete before changing text
+        setTimeout(() => {
+          // Change the text
+          currentIndex = (currentIndex + 1) % messages.length;
+          textElement.innerHTML = messages[currentIndex];
+
+          // Apply fade-in animation
+          button1Element.classList.remove(oldbg)
+          headerElement.classList.remove(oldtext)
+          oldtext = colors[currentIndex]
+          oldbg = bgcolors[currentIndex]
+          button1Element.classList.add(oldbg)
+          headerElement.classList.add(oldtext)
+          textElement.classList.remove('fade-out');
+          textElement.classList.add('fade-in');
+        }, 500); // Match this duration to the fade-out animation duration
+      }
+
+      // Initialize the first text
+      textElement.innerHTML = messages[currentIndex];
+      
+      headerElement.classList.add(oldtext)
+      button1Element.classList.add(oldbg)
+      textElement.classList.add('fade-in');
+
+      // Change text every 3 seconds (3s = 3000ms)
+      setInterval(changeText, 3000);
+  </script>
+  <!-- #endregion -->
+</body>
+
+</html>
